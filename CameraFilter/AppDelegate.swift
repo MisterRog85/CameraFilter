@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        //couleur de fond de la bar du menu
+        UINavigationBar.appearance().barTintColor = UIColor(displayP3Red: 250/255, green: 152/255, blue: 58/255, alpha: 1.0)
+        
+        //couleur de police pour le gros titre
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        //couleur de police pour le petit titre
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         return true
     }
 
